@@ -69,10 +69,7 @@ const ConsultationModal = ({ isOpen, onClose }) => {
 
     // 3. Kiểm tra Email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!formData.Email) {
-      newErrors.Email = 'Vui lòng nhập địa chỉ email';
-      isValid = false;
-    } else if (!emailRegex.test(formData.Email)) {
+    if (formData.Email && !emailRegex.test(formData.Email)) {
       newErrors.Email = 'Email không đúng định dạng';
       isValid = false;
     }
@@ -178,7 +175,7 @@ const ConsultationModal = ({ isOpen, onClose }) => {
 
               {/* Field Email */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Email <span className="text-red-500">*</span></label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                 <div className="relative">
                   <input 
                     type="text" // Để text thay vì email để ta tự validate custom
