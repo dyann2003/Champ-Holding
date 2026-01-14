@@ -19,7 +19,13 @@ const App = () => {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-rose-100">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-rose-900 rounded-full flex items-center justify-center text-white font-bold text-xl border-2 border-amber-500 shadow-lg">HT</div>
+            <div className="w-12 h-12 bg-rose-900 rounded-full flex items-center justify-center border-2 border-amber-500 shadow-lg overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768408048/z7431496658478_316d5ddea0f1ab90eb930bd327734792_rmsmdg.jpg"
+                alt="Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
             <div>
               <h1 className="text-xl font-bold text-rose-950 leading-none">HUYỀN TRANG</h1>
               <span className="text-xs font-bold text-amber-600 tracking-widest uppercase">Champ Holding</span>
@@ -28,6 +34,7 @@ const App = () => {
           <nav className="hidden md:flex gap-8 font-bold text-gray-600 text-sm uppercase tracking-wide">
             <button onClick={() => scrollToSection('about')} className="hover:text-rose-800 transition">Giới thiệu</button>
             <button onClick={() => scrollToSection('projects')} className="hover:text-rose-800 transition">Dự án</button>
+            <button onClick={() => scrollToSection('work')} className="hover:text-rose-800 transition">Công việc</button>
             <button onClick={() => scrollToSection('connect')} className="hover:text-rose-800 transition">Kết nối</button>
           </nav>
           <a href="tel:0916868165" className="hidden md:flex items-center gap-2 bg-rose-900 text-white px-5 py-2 rounded-full hover:bg-rose-800 transition shadow-lg border border-rose-800">
@@ -36,7 +43,7 @@ const App = () => {
         </div>
       </header>
 
-      {/* HERO SECTION*/}
+      {/* HERO SECTION */}
       <section className="relative h-auto lg:min-h-screen flex items-center bg-gray-900 overflow-hidden py-10 lg:py-0">
         <div className="absolute inset-0 z-0">
           <img 
@@ -51,8 +58,8 @@ const App = () => {
         <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 h-full">
           
           {/* --- CỘT TRÁI: THÔNG TIN --- */}
-          <div className="text-white space-y-8 flex flex-col justify-center pb-24 md:pb-32 pt-10 md:pt-0">
-            
+          <div className="text-white space-y-6 flex flex-col justify-center pb-20 md:pb-24 pt-8 md:pt-0 pl-6 md:pl-10">
+
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm font-bold border border-amber-500/30 backdrop-blur-md w-fit">
               <Crown size={16} className="text-amber-400" /> 
@@ -124,7 +131,7 @@ const App = () => {
 
               {/* ẢNH CHÂN DUNG */}
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" 
+                src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768408052/z7431496395297_5417d70b7358bbf7e0fcb2adaba5c9c5_u06szd.jpg" 
                 alt="Huyen Trang Portrait" 
                 className="relative z-10 h-[90%] md:h-[95%] w-auto object-contain drop-shadow-[0_0_15px_rgba(251,191,36,0.3)] hover:scale-105 transition duration-700 ease-in-out" 
               />
@@ -138,7 +145,7 @@ const App = () => {
             <div className="relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-rose-900"></div>
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-amber-500"></div>
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="About" className="w-full h-[500px] object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition duration-700" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768408049/z7431496394216_f553cef0625b81934d8f0fdc63a5b680_tlkn0t.jpg" alt="About" className="w-full h-[650px] object-cover rounded-lg shadow-2xl transition duration-700" />
             </div>
             <div>
                 <span className="text-rose-800 font-bold tracking-widest uppercase text-sm">Về tôi</span>
@@ -195,74 +202,87 @@ const App = () => {
                 <div className="w-24 h-1 bg-amber-500 mx-auto mt-6 rounded-full"></div>
             </div>
 
-            {/* GRID 3 CỘT CHO 6 ẢNH SỰ KIỆN */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Card 1: Sự kiện Vinh Danh */}
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition duration-500 hover:-translate-y-2 cursor-pointer">
-                    <div className="h-60 overflow-hidden relative">
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition z-10"></div>
-                         {/* THAY ẢNH THẬT VÀO ĐÂY */}
-                         <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event 1" />
-                         <div className="absolute top-3 right-3 bg-amber-500 text-rose-950 p-2 rounded-lg z-20"><Award size={20}/></div>
-                    </div>
-                    <div className="p-5 text-center"><h3 className="text-lg font-bold text-amber-400 mb-2 group-hover:text-white transition">Sự Kiện Vinh Danh</h3><p className="text-gray-300 text-sm">Vinh danh các chiến binh sales xuất sắc nhất tháng</p></div>
-                </div>
-                
-                {/* Card 2: Lễ Mở Bán Dự Án */}
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition duration-500 hover:-translate-y-2 cursor-pointer">
-                    <div className="h-60 overflow-hidden relative">
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition z-10"></div>
-                         {/* THAY ẢNH THẬT VÀO ĐÂY */}
-                         <img src="https://images.unsplash.com/photo-1561489396-888724a1543d?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event 2" />
-                         <div className="absolute top-3 right-3 bg-amber-500 text-rose-950 p-2 rounded-lg z-20"><Building size={20}/></div>
-                    </div>
-                    <div className="p-5 text-center"><h3 className="text-lg font-bold text-amber-400 mb-2 group-hover:text-white transition">Lễ Mở Bán Dự Án</h3><p className="text-gray-300 text-sm">Sự kiện ra mắt dự án Noble Palace Tây Thăng Long</p></div>
-                </div>
-
-                {/* Card 3: Gặp Gỡ Đối Tác */}
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition duration-500 hover:-translate-y-2 cursor-pointer">
-                    <div className="h-60 overflow-hidden relative">
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition z-10"></div>
-                         {/* THAY ẢNH THẬT VÀO ĐÂY */}
-                         <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event 3" />
-                         <div className="absolute top-3 right-3 bg-amber-500 text-rose-950 p-2 rounded-lg z-20"><Users size={20}/></div>
-                    </div>
-                    <div className="p-5 text-center"><h3 className="text-lg font-bold text-amber-400 mb-2 group-hover:text-white transition">Gặp Gỡ Đối Tác</h3><p className="text-gray-300 text-sm">Ký kết hợp tác chiến lược cùng các đơn vị phân phối</p></div>
-                </div>
-
-                {/* Card 4: Đào Tạo Nội Bộ */}
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition duration-500 hover:-translate-y-2 cursor-pointer">
-                    <div className="h-60 overflow-hidden relative">
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition z-10"></div>
-                         {/* THAY ẢNH THẬT VÀO ĐÂY */}
-                         <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b955?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event 4" />
-                         <div className="absolute top-3 right-3 bg-amber-500 text-rose-950 p-2 rounded-lg z-20"><Presentation size={20}/></div>
-                    </div>
-                    <div className="p-5 text-center"><h3 className="text-lg font-bold text-amber-400 mb-2 group-hover:text-white transition">Đào Tạo Nội Bộ</h3><p className="text-gray-300 text-sm">Chia sẻ kiến thức và kỹ năng thực chiến cho đội ngũ</p></div>
-                </div>
-                
-                {/* Card 5: Tiệc Tất Niên */}
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition duration-500 hover:-translate-y-2 cursor-pointer">
-                    <div className="h-60 overflow-hidden relative">
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition z-10"></div>
-                         {/* THAY ẢNH THẬT VÀO ĐÂY */}
-                         <img src="https://images.unsplash.com/photo-1519671482502-9790a6330a43?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event 5" />
-                         <div className="absolute top-3 right-3 bg-amber-500 text-rose-950 p-2 rounded-lg z-20"><Calendar size={20}/></div>
-                    </div>
-                    <div className="p-5 text-center"><h3 className="text-lg font-bold text-amber-400 mb-2 group-hover:text-white transition">Tiệc Tất Niên</h3><p className="text-gray-300 text-sm">Gala Dinner tổng kết năm và định hướng năm mới</p></div>
-                </div>
-
-                {/* Card 6: Hội Nghị Khách Hàng */}
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition duration-500 hover:-translate-y-2 cursor-pointer">
-                    <div className="h-60 overflow-hidden relative">
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition z-10"></div>
-                         {/* THAY ẢNH THẬT VÀO ĐÂY */}
-                         <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2073&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event 6" />
-                         <div className="absolute top-3 right-3 bg-amber-500 text-rose-950 p-2 rounded-lg z-20"><Mic size={20}/></div>
-                    </div>
-                    <div className="p-5 text-center"><h3 className="text-lg font-bold text-amber-400 mb-2 group-hover:text-white transition">Hội Nghị Khách Hàng</h3><p className="text-gray-300 text-sm">Tri ân khách hàng thân thiết và giới thiệu cơ hội đầu tư</p></div>
-                </div>
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+              <div className="relative h-60 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Year End Party 2024" />
+                <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Award size={22} /></div>
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-bold text-amber-400 group-hover:text-white transition">
+                  Year End Party 2024
+                </h3>
+              </div>
             </div>
+
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+              <div className="relative h-60 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
+                <img src="https://images.unsplash.com/photo-1561489396-888724a1543d?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kick-off Noble Palace" />
+                <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Building size={22} /></div>
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-bold text-amber-400 group-hover:text-white transition">
+                  Lễ Kick-off dự án Noble Palace Tây Thăng Long
+                </h3>
+              </div>
+            </div>
+
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+              <div className="relative h-60 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Khai trương văn phòng" />
+                <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><MapPin size={22} /></div>
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-bold text-amber-400 group-hover:text-white transition">
+                  Khai trương VP Chi nhánh Đan Phượng
+                </h3>
+              </div>
+            </div>
+
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+              <div className="relative h-60 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b955?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Off Team" />
+                <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Users size={22} /></div>
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-bold text-amber-400 group-hover:text-white transition">
+                  Off Team VP Champ Holding – Hiệp hội BĐS Tây Hà Nội
+                </h3>
+              </div>
+            </div>
+
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+              <div className="relative h-60 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
+                <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2073&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Lãnh đạo doanh nghiệp" />
+                <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Crown size={22} /></div>
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-bold text-amber-400 group-hover:text-white transition">
+                  Gặp gỡ các Lãnh đạo doanh nghiệp
+                </h3>
+              </div>
+            </div>
+
+            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
+              <div className="relative h-60 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
+                <img src="https://images.unsplash.com/photo-1519671482502-9790a6330a43?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Vinh danh cá nhân xuất sắc" />
+                <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Award size={22} /></div>
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="text-lg font-bold text-amber-400 group-hover:text-white transition">
+                  Vinh danh những cá nhân xuất sắc của năm
+                </h3>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
@@ -298,7 +318,15 @@ const App = () => {
       <footer className="bg-gray-900 text-white py-16 border-t border-gray-800">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
           <div>
-            <div className="flex items-center gap-3 mb-6"><div className="w-10 h-10 bg-rose-900 rounded-full flex items-center justify-center font-bold border border-amber-500">HT</div><span className="text-2xl font-bold tracking-tight">HUYỀN TRANG <span className="text-amber-500">LAND</span></span></div>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-rose-900 rounded-full flex items-center justify-center border-2 border-amber-500 shadow-lg overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768409894/Untitled_design_t9pove.png"
+                  alt="Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <span className="text-2xl font-bold tracking-tight">HUYỀN TRANG <span className="text-amber-500">LAND</span></span></div>
             <p className="text-gray-400 mb-6 leading-relaxed max-w-sm">Founder Champ Holding. Đối tác tin cậy mang lại giải pháp đầu tư an toàn và hiệu quả cao nhất.</p>
           </div>
           <div>
