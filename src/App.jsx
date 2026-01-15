@@ -194,6 +194,51 @@ const App = () => {
           </div>
         </div>
       </section>
+      
+      {/* TIKTOK VIDEOS */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+
+          {/* Title */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              VIDEO TIKTOK NỔI BẬT
+            </h2>
+            <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
+          </div>
+
+          {/* Grid video */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
+            {[
+              "7551443468900470023",
+              "7586277254393498888",
+              "7568848776312458503",
+              "7576586354386144519",
+            ].map((id, index) => (
+              <div
+                key={index}
+                className="relative aspect-[9/16] rounded-xl overflow-hidden border border-white/10 shadow-lg hover:scale-105 transition duration-300 bg-gray-900 group"
+              >
+                <div className="absolute inset-0 flex items-center justify-center text-white/20">
+                  <span className="text-xs">Loading TikTok...</span>
+                </div>
+
+                <iframe
+                  src={`https://www.tiktok.com/embed/v2/${id}`}
+                  className="absolute inset-0 w-full h-full z-10"
+                  title={`tiktok-video-${index}`}
+                  loading="lazy"
+                  scrolling="no" // QUAN TRỌNG: Chặn thanh cuộn nội bộ
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* --- WORK SECTION --- */}
       <section id="work" className="py-24 bg-gray-900 text-white relative overflow-hidden">
