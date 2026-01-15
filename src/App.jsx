@@ -3,6 +3,7 @@ import { MapPin, Phone, Star, CheckCircle, Crown, ArrowRight, MessageCircle, Glo
 import { FaFacebookF, FaTiktok } from 'react-icons/fa';
 import { SiZalo } from 'react-icons/si';
 import ConsultationModal from './components/ConsultationModal';
+import TikTokEmbed from './components/TikTokEmbed';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -208,7 +209,9 @@ const App = () => {
           </div>
 
           {/* Grid video */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
+          {/* Lưu ý: TikTok mobile width tối thiểu là 325px. 
+              Trên màn hình trung bình (md) chia 4 cột có thể bị quá nhỏ -> Nên chia 2 hoặc 3 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               "7551443468900470023",
               "7586277254393498888",
@@ -217,23 +220,15 @@ const App = () => {
             ].map((id, index) => (
               <div
                 key={index}
-                className="relative aspect-[9/16] rounded-xl overflow-hidden border border-white/10 shadow-lg hover:scale-105 transition duration-300 bg-gray-900 group"
+                // Thêm min-h để tránh layout bị giật khi chưa load xong
+                className="relative w-full min-h-[500px] rounded-xl bg-gray-900 border border-white/10 p-1"
               >
-                <div className="absolute inset-0 flex items-center justify-center text-white/20">
-                  <span className="text-xs">Loading TikTok...</span>
+                {/* Placeholder Loading text nằm dưới */}
+                <div className="absolute inset-0 flex items-center justify-center text-white/20 -z-10">
+                  <span className="text-xs">Loading...</span>
                 </div>
-
-                <iframe
-                  src={`https://www.tiktok.com/embed/v2/${id}`}
-                  className="absolute inset-0 w-full h-full z-10"
-                  title={`tiktok-video-${index}`}
-                  loading="lazy"
-                  scrolling="no" // QUAN TRỌNG: Chặn thanh cuộn nội bộ
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"
-                />
+                
+                <TikTokEmbed videoId={id} />
               </div>
             ))}
           </div>
