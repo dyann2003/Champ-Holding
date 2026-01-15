@@ -56,8 +56,7 @@ const ConsultationModal = ({ isOpen, onClose }) => {
     }
 
     // 2. Kiểm tra Số điện thoại (VN: 10 số, bắt đầu bằng 0)
-    const phoneRegex = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g; // Regex số điện thoại Việt Nam cơ bản
-    const simplePhoneRegex = /^0\d{9}$/; // Hoặc dùng cái đơn giản: bắt đầu bằng 0 và có 10 chữ số
+    const simplePhoneRegex = /^(84|0)(3|5|7|8|9)\d{8}$/; // Regex số điện thoại Việt Nam cơ bản và có 10 chữ số
 
     if (!formData.SoDienThoai) {
       newErrors.SoDienThoai = 'Vui lòng nhập số điện thoại';
@@ -67,7 +66,7 @@ const ConsultationModal = ({ isOpen, onClose }) => {
       isValid = false;
     }
 
-    // 3. Kiểm tra Email
+    // 3. Kiểm tra Email (nếu có nhập)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (formData.Email && !emailRegex.test(formData.Email)) {
       newErrors.Email = 'Email không đúng định dạng';

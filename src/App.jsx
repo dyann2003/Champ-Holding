@@ -21,7 +21,7 @@ const App = () => {
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-rose-900 rounded-full flex items-center justify-center border-2 border-amber-500 shadow-lg overflow-hidden">
               <img
-                src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768408048/z7431496658478_316d5ddea0f1ab90eb930bd327734792_rmsmdg.jpg"
+                src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465881/2_rk7sw1.png"
                 alt="Logo"
                 className="w-full h-full object-contain"
               />
@@ -173,15 +173,15 @@ const App = () => {
           <div className="text-center mb-16"><span className="text-amber-600 font-bold uppercase tracking-widest text-sm">Sản phẩm chiến lược</span><h2 className="text-4xl font-bold text-rose-950 mt-2 mb-4">DỰ ÁN ĐANG TRIỂN KHAI</h2><div className="w-24 h-1 bg-rose-900 mx-auto"></div></div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 cursor-pointer" onClick={openModal}>
-              <div className="relative h-64 overflow-hidden"><span className="absolute top-4 left-4 bg-rose-600 text-white text-xs font-bold px-3 py-1 rounded z-10">HOT NHẤT</span><img src="https://images.unsplash.com/photo-1600596542815-60c37c6525fa?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Noble Palace"/></div>
+              <div className="relative h-64 overflow-hidden"><span className="absolute top-4 left-4 bg-rose-600 text-white text-xs font-bold px-3 py-1 rounded z-10">HOT NHẤT</span><img src="https://noblepalacetaythanglong.com/wp-content/uploads/noble-palace-tay-thang-long-1.jpg" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Noble Palace"/></div>
               <div className="p-6"><h3 className="text-xl font-bold text-rose-950 mb-2">NOBLE PALACE TÂY THĂNG LONG</h3><p className="text-gray-500 text-sm mb-4 line-clamp-2">Kiệt tác kiến trúc Châu Âu. Cơ hội đầu tư sinh lời x3.</p><div className="flex items-center gap-2 text-rose-700 font-bold text-sm uppercase">Xem chi tiết <ArrowRight size={16}/></div></div>
             </div>
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 cursor-pointer" onClick={openModal}>
-              <div className="relative h-64 overflow-hidden"><span className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded z-10">ĐAN PHƯỢNG</span><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Vinhomes"/></div>
+              <div className="relative h-64 overflow-hidden"><span className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded z-10">ĐAN PHƯỢNG</span><img src="https://vinhomesdanphuonghanoi.com/wp-content/uploads/2025/03/Phan-khu-Pho-Hung-Dong-Wonder-Avenue-Vinhomes-Dan-Phuong-Wonder-City.jpg" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Vinhomes"/></div>
               <div className="p-6"><h3 className="text-xl font-bold text-rose-950 mb-2">VINHOMES WONDER CITY</h3><p className="text-gray-500 text-sm mb-4 line-clamp-2">Đại đô thị xanh đẳng cấp. Vinhomes Đan Phượng - Biểu tượng sống mới.</p><div className="flex items-center gap-2 text-rose-700 font-bold text-sm uppercase">Xem chi tiết <ArrowRight size={16}/></div></div>
             </div>
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 cursor-pointer" onClick={openModal}>
-              <div className="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Hinode"/></div>
+              <div className="relative h-64 overflow-hidden"><img src="https://vars.com.vn/uploads/up/vars/project/2022/05/09/22/35/hin1652088938_4647.jpg" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Hinode"/></div>
               <div className="p-6"><h3 className="text-xl font-bold text-rose-950 mb-2">HINODE ROYAL PARK</h3><p className="text-gray-500 text-sm mb-4 line-clamp-2">Khu đô thị Kim Chung Di Trạch. Vị trí vàng cửa ngõ phía Tây.</p><div className="flex items-center gap-2 text-rose-700 font-bold text-sm uppercase">Xem chi tiết <ArrowRight size={16}/></div></div>
             </div>
           </div>
@@ -206,7 +206,7 @@ const App = () => {
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
               <div className="relative h-60 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
-                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Year End Party 2024" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465853/4_gafa9y.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Year End Party 2024" />
                 <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Award size={22} /></div>
               </div>
               <div className="p-5 text-center">
@@ -219,7 +219,7 @@ const App = () => {
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
               <div className="relative h-60 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
-                <img src="https://images.unsplash.com/photo-1561489396-888724a1543d?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kick-off Noble Palace" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465854/5_e5xetr.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kick-off Noble Palace" />
                 <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Building size={22} /></div>
               </div>
               <div className="p-5 text-center">
@@ -232,7 +232,7 @@ const App = () => {
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
               <div className="relative h-60 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
-                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Khai trương văn phòng" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465854/7_jeocf3.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Khai trương văn phòng" />
                 <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><MapPin size={22} /></div>
               </div>
               <div className="p-5 text-center">
@@ -245,7 +245,7 @@ const App = () => {
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
               <div className="relative h-60 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
-                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b955?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Off Team" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465856/6_r21yi4.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Off Team" />
                 <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Users size={22} /></div>
               </div>
               <div className="p-5 text-center">
@@ -258,7 +258,7 @@ const App = () => {
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
               <div className="relative h-60 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
-                <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2073&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Lãnh đạo doanh nghiệp" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465854/8_udk0nt.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Lãnh đạo doanh nghiệp" />
                 <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Crown size={22} /></div>
               </div>
               <div className="p-5 text-center">
@@ -271,7 +271,7 @@ const App = () => {
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:bg-white/10 cursor-pointer">
               <div className="relative h-60 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-80 group-hover:opacity-40 transition z-10"></div>
-                <img src="https://images.unsplash.com/photo-1519671482502-9790a6330a43?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Vinh danh cá nhân xuất sắc" />
+                <img src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465854/9_kmv3bl.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Vinh danh cá nhân xuất sắc" />
                 <div className="absolute top-4 right-4 bg-amber-500 text-rose-950 p-2.5 rounded-xl shadow-lg z-20"><Award size={22} /></div>
               </div>
               <div className="p-5 text-center">
@@ -321,12 +321,12 @@ const App = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-rose-900 rounded-full flex items-center justify-center border-2 border-amber-500 shadow-lg overflow-hidden">
                 <img
-                  src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768409894/Untitled_design_t9pove.png"
+                  src="https://res.cloudinary.com/ddutk6rhm/image/upload/v1768465881/2_rk7sw1.png"
                   alt="Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-2xl font-bold tracking-tight">HUYỀN TRANG <span className="text-amber-500">LAND</span></span></div>
+              <span className="text-2xl font-bold tracking-tight">HUYỀN TRANG <span className="text-amber-500">Champ Holding</span></span></div>
             <p className="text-gray-400 mb-6 leading-relaxed max-w-sm">Founder Champ Holding. Đối tác tin cậy mang lại giải pháp đầu tư an toàn và hiệu quả cao nhất.</p>
           </div>
           <div>
