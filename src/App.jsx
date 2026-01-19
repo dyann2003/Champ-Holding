@@ -101,8 +101,6 @@ const App = () => {
         </div>
       </header>
 
-      {/* --- FIX: MOBILE MENU ĐƯỢC ĐƯA RA NGOÀI HEADER --- */}
-      {/* Để z-40 để nằm dưới Header (z-50) nhưng trên nội dung trang web */}
       <div 
           className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 
             transition-all duration-300 ease-in-out
@@ -129,8 +127,6 @@ const App = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/90 to-rose-950/80"></div>
         </div>
-
-        {/* ... (Các phần code còn lại giữ nguyên như cũ) ... */}
 
         <div className="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 h-full">
             {/* ... Nội dung Hero ... */}
@@ -202,8 +198,7 @@ const App = () => {
         </div>
       </section> 
 
-      {/* --- CÁC SECTION CÒN LẠI (GIỮ NGUYÊN KHÔNG THAY ĐỔI) --- */}
-      {/* (About, Projects, Work, Connect, Footer... copy y nguyên phần dưới của bạn vào đây) */}
+      {/* --- ABOUT SECTION --- */}
       <section id="about" className="py-16 md:py-24 bg-white relative">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="relative group">
