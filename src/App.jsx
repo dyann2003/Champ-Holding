@@ -72,11 +72,11 @@ const App = () => {
           </div>
 
           {/* DESKTOP NAV */}
-          <nav className={`hidden md:flex gap-8 font-bold text-sm uppercase tracking-wide px-6 py-2 rounded-full transition-all duration-300 ${scrolled ? 'text-gray-600 bg-white/80' : 'text-white/90 bg-black/20 backdrop-blur-sm'}`}>
-            <button onClick={() => scrollToSection('about')} className="hover:text-amber-400 transition hover:scale-105">Giới thiệu</button>
-            <button onClick={() => scrollToSection('projects')} className="hover:text-amber-400 transition hover:scale-105">Dự án</button>
-            <button onClick={() => scrollToSection('work')} className="hover:text-amber-400 transition hover:scale-105">Công việc</button>
-            <button onClick={() => scrollToSection('connect')} className="hover:text-amber-400 transition hover:scale-105">Kết nối</button>
+          <nav className={`hidden md:flex gap-12 font-bold text-lg uppercase tracking-wide px-10 py-4 rounded-full transition-all duration-300 ${scrolled ? 'text-gray-600 bg-white/80' : 'text-white/90 bg-black/20 backdrop-blur-sm'}`}>
+            <button onClick={() => scrollToSection('about')} className="hover:text-amber-400 transition hover:scale-105">GIỚI THIỆU</button>
+            <button onClick={() => scrollToSection('projects')} className="hover:text-amber-400 transition hover:scale-105">DỰ ÁN</button>
+            <button onClick={() => scrollToSection('work')} className="hover:text-amber-400 transition hover:scale-105">CÔNG VIỆC</button>
+            <button onClick={() => scrollToSection('connect')} className="hover:text-amber-400 transition hover:scale-105">KẾT NỐI</button>
           </nav>
 
           {/* CTA BUTTON */}
